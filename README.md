@@ -12,30 +12,30 @@ tts:
   - platform: reversotts
 ```
 
-### CONFIGURATION VARIABLES
+### Configuration Optinal Variables
 
 ```yaml
  language: "he-IL-Asaf-Hebrew"
 ```
-description: The language to use. Supported languages are
-
-required: `false`
-
-type: `string`
+The language to use. Supported languages are
 
 default: "`en-US`"
 
+```yaml
+ pitch: "100"
+```
 
-- **pitch(speed)**:
-	description: The speak speed. Supported speed are `10-100`
-    required: `false`
-    type: `string`
-    default: "`100`"
-- **bitrate**:
-    description: The bitrate for sound quailty . Supported bitrate are `22k, 96k, 128, 192k, 320k`
-    required: `false`
-    type: `string`
-    default: "`128k`"
+The speak speed. Supported speed are `10-100`, 100 is normal speak.
+
+default: "`100`"
+
+```yaml
+ bitrate: "128k"
+```
+
+The bitrate for sound quailty . Supported bitrate are `22k, 96k, 128, 192k, 320k`
+
+default: "`128k`"
 
 ## Full configuration example
 
