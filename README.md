@@ -17,7 +17,7 @@ tts:
 ```yaml
  language: "he-IL-Asaf-Hebrew"
 ```
-The language to use. Supported languages are in this table , please use only the LangCode column:
+The language to use. Supported languages are in this table , please use only the name from **LangCode** column:
 
 | LangCode | Voice | Gender | Language |
 | ------------- | ------------- | ------------- | ------------- |
