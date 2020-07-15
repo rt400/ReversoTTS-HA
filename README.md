@@ -15,7 +15,7 @@ tts:
 ### CONFIGURATION VARIABLES
 
  - **language**:
-        description: The language to use. Supported languages are ."
+        : description: The language to use. Supported languages are 
         required: `false`
         type: `string`
         default: "`en-US`"
