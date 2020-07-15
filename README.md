@@ -14,13 +14,18 @@ tts:
 
 ### CONFIGURATION VARIABLES
 
- - **language**:
 ```yaml
-description: The language to use. Supported languages are 
-required: `false`
-type: `string`
-default: "`en-US`"
+ language: "he-IL-Asaf-Hebrew"
 ```
+description: The language to use. Supported languages are
+
+required: `false`
+
+type: `string`
+
+default: "`en-US`"
+
+
 - **pitch(speed)**:
 	description: The speak speed. Supported speed are `10-100`
     required: `false`
