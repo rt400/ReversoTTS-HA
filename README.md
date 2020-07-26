@@ -2,6 +2,15 @@
 
 The `ReversoTTS` text-to-speech platform uses online Reverso Text-to-Speech engine to read a text with natural sounding voices.
 
+## Installation
+
+First download all files in folder https://github.com/rt400/ReversoTTS-HA/tree/master/custom_components/reversotts .
+Now you need to create folder "reversotts" in your HomeAssistant config/custom_components folder and copy all files that you already download.
+So after that you need to see like this example :
+
+![GitHub Logo](/images/folders.png)
+
+
 ## Configuration
 
 To enable text-to-speech with Reverso , add the following lines to your `configuration.yaml`:
@@ -142,3 +151,32 @@ tts:
     pitch: "100"
     bitrate: "128k"
 ```
+
+## Examples of how to use
+
+There are several ways how to use TTS service.
+
+* Through call a service in HomeAssistant Developer Tools, in this example i used with Google Home Mini Speaker:
+
+  ![GitHub Logo](/images/service_small.png)
+  
+* Through Automation in HomeAssistant , in this example i send to my Google HomeMini a meesage :
+
+  ```
+  - id: Test Message
+    alias: Test Message
+    initial_state: 'on'
+    trigger:
+    - platform: state
+      entity_id: input_boolean.test
+      from: 'off'
+      to: 'on'
+    condition:
+    action:
+    - data:
+        message: "This is a Test For GitHub Readme"
+      service: tts.reversotts_say
+      entity_id: media_player.google_home_mini_salon 
+  ```
+  
+  **Good Luck !**
