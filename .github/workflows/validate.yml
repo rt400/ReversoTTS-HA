@@ -6,14 +6,23 @@ on:
   schedule:
     - cron: "0 0 * * *"
 
+# jobs:
+#   validate:
+#     runs-on: "ubuntu-latest"
+#     steps:
+#       - uses: "actions/checkout@v2"
+#       - uses: "home-assistant/actions/hassfest@master"
+#       - name: HACS validation
+#         uses: "hacs/integration/action@main"
+#         with:
+# #           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           CATEGORY: "integration"
 jobs:
   validate:
     runs-on: "ubuntu-latest"
     steps:
       - uses: "actions/checkout@v2"
-      - uses: "home-assistant/actions/hassfest@master"
       - name: HACS validation
-        uses: "hacs/integration/action@main"
+        uses: "hacs/action@main"
         with:
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CATEGORY: "integration"
+          category: "integration"
