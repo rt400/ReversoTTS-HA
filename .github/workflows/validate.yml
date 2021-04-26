@@ -15,5 +15,5 @@ jobs:
       - name: HACS validation
         uses: "hacs/integration/action@main"
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CATEGORY: "integration"
