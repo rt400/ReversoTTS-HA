@@ -5,6 +5,6 @@
   "documentation": "https://github.com/rt400/ReversoTTS-HA",
   "dependencies": [],
   "codeowners": ["@yuval_mejahez"],
-  "requirements": ["pyttsreverso==0.2"],
+  "requirements": ["pyttsreverso==0.4"],
   "issue_tracker": "https://github.com/rt400/ReversoTTS-HA/issues"
 }
